@@ -63,9 +63,9 @@ function meta_refresh() {
 	$day = date('N');
 
 	if( $day > 5) : 
-		$seconds = get_option('meta_refresh_weekdays');; 
+		$seconds = get_option('meta_refresh_weekend');; 
 	else: 
-		$seconds = get_option('meta_refresh_weekend'); 
+		$seconds = get_option('meta_refresh_weekdays'); 
 	endif;
 
 	echo "<meta http-equiv=\"refresh\" content=\"$seconds\" day=\"$day\" />\r\n";
